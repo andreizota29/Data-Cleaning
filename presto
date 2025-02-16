@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Full file path to the CSV on your desktop
+file_path = r'C:\Users\andre\Desktop\cleaning_Data\retail_store_sales.csv'
+
+# Load the CSV file
+df = pd.read_csv(file_path)
+
+# Show the first 5 rows
+print(df.head())
+
+print(df.describe())
+
+print(df.isnull().sum())
